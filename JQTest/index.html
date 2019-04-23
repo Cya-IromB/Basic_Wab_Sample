@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>JQueryチュートリアル</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <h1>JQueryの基本的な使い方と関数</h1>
+    <p>JQueryの使い方についてまとめる。</p>
+    <p>まずは基礎の基礎</p>
+
+    <pre class="codeArea"><code>
+        jQuery(document).ready(function($){
+          //code
+        });
+
+        $(document).ready(function($){
+          //code
+        });
+
+        $(function(){
+          //code
+        });
+    </code></pre>
+    <p>以上がjQueryの基礎構文。</p>
+
+    <p>もう少し具体的には…</p>
+    <pre class="codeArea"><code>
+        $(function(){
+          $('p').click(function(){　//どの要素にどんなことをしたら
+            $(this).text("押したなお前");　//この処理が行われる
+          });
+        });
+    </code></pre>
+
+    <p>こんな感じ。</p>
+
+    <p>よく使うメソッドの例を挙げておく</p>
+
+    <code class="oneLine js-addClass">$('oneLine').addClass('add');</code>
+    <p>クラスを追加する</p>
+
+    <p>あと調べておくもの->
+      attr,
+      change(EVハンドラ),
+      click(EVハンドラ),
+      hide,
+      show,
+      toggle,
+      text</p>
+
+
+
+  <script src="./jquery-3.4.0.min.js"></script>
+  <script src="./JQuery_tuto.js"></script>
+  </body>
+</html>
